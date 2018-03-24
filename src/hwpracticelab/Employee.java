@@ -8,7 +8,7 @@ public class Employee extends Habits implements  Person{
 	Employee()
 	{
 		counte++;
-		System.out.println("total number of employees" + counte);
+		//System.out.println("total number of employees" + counte);
 	}
 	public void eat()
 	{

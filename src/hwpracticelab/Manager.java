@@ -1,13 +1,13 @@
 package hwpracticelab;
 
-public class Manager implements Person {
-  static int countm=0;
+public class Manager extends Habits implements Person {
+    static int countm;
 	private int mId;
 	private String manName;
 	private Double manSalary;
    Manager()
    {
-	   countm++; System.out.println("Total number of Managers " +countm);
+	   countm++; //System.out.println("Total number of Managers " +countm);
    }
 	public void eat()
 	{
@@ -27,7 +27,7 @@ public class Manager implements Person {
 	}
 	public void setmId(int mId) {
 	     
-		this.mId = mId; countm++;
+		this.mId = mId; 
 	}
 	public String getManName() {
 		return manName;
@@ -41,8 +41,8 @@ public class Manager implements Person {
 	public void setManSalary(Double manSalary) {
 		this.manSalary = manSalary;
 	}
-	static int getManCount()
+	/*static int getManCount()
 	{
 		return countm;
-	}
+	}*/
 }
